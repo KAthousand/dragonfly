@@ -1,0 +1,12 @@
+.about-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content {
+  border: 2px solid red;
+  height: 75%;
+  width: 50%;
+}
