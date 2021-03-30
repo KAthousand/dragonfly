@@ -1,0 +1,23 @@
+.header-container {
+  border: 2px solid red;
+}
+
+.address-container {
+  border: 2px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link-container {
+  border: 2px solid green;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-menu {
+  border: 2px solid purple;
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}

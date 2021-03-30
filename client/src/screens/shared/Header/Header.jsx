@@ -3,8 +3,17 @@ import "./Header.css"
 
 function Header(props) {
   return (
-    <div>
-      <h1>I am the header.</h1>
+    <div className='header-container'>
+      <div className='address-container'>
+        <p>1234 Address St, Detroit, MI</p>
+      </div>
+      <div className='nav-link-container'>
+        <div className='nav-menu'>
+          <a href='_blank' className='nav-link'>OUR STORY</a>
+          <a href='_blank' className='nav-link'>MENU</a>
+          <a href='_blank' className='nav-link'>HOURS AND LOCATION</a>
+        </div>
+      </div>
     </div>
   );
 }
