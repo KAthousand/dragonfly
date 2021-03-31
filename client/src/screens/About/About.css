@@ -1,6 +1,6 @@
 .about-container {
   background-color: var(--background);
-  height: 175vh;
+  height: 150vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,13 +18,13 @@
   position: fixed;
   top: 0;
   right: 0;
-  opacity: 0.5;
+  opacity: 0.2;
   z-index: -1;
 }
 
 .about-content {
   background-color: var(--red);
-  height: 75%;
+  height: 70%;
   width: 100%;
   position: absolute;
   display: flex;

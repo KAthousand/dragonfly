@@ -29,6 +29,10 @@ button {
   --red: #e85a4f;
 }
 
+body {
+  background-color: var(--background);
+}
+
 .hidden {
   display: none;
 }

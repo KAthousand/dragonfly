@@ -3,6 +3,7 @@ import Title from "./screens/Title/Title"
 import About from "./screens/About/About"
 import Menu from "./screens/Menu/Menu"
 import './App.css';
+import Information from "./screens/Information/Information";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Title />
         <About />
         <Menu />
+        <Information />
       </Layout>
   );
 }
