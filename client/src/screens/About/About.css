@@ -1,12 +1,32 @@
 .about-container {
-  height: 100vh;
+  background-color: var(--background);
+  height: 175vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: hidden;
+  z-index: -2;
+}
+.about-container::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/grey-tiles.png");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+  position: fixed;
+  top: 0;
+  right: 0;
+  opacity: 0.5;
+  z-index: -1;
 }
 
 .about-content {
-  border: 2px solid red;
+  background-color: var(--red);
   height: 75%;
-  width: 50%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
 }

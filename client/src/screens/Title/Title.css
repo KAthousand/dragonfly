@@ -1,4 +1,4 @@
 .title-container {
-  border: 2px solid green;
-  height: 100vh;
+  background-color: var(--light-red);
+  height: 90vh;
 }
