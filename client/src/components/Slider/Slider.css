@@ -1,0 +1,40 @@
+.slider {
+  border: 2px solid green;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  /* position: absolute; */
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.slide-nav {
+  border: 2px solid yellow;
+  position: absolute;
+  /* top: 0; */
+  /* z-index: 10; */
+  margin: 45vh 10vh;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide {
+  border: 1px solid blue;
+  min-width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.section-a {
+  background-color: aquamarine;
+}
+
+.section-b {
+  background-color: gold;
+}
+
+.section-c {
+  background-color: blue;
+}
