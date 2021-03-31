@@ -1,4 +1,31 @@
 .menu-container {
   height: 100vh;
   background-color: var(--beige);
+  display: flex;
+}
+
+.menu-photo {
+  border: 2px solid blue;
+  width: 50%;
+}
+
+.menu-content {
+  border: 2px solid green;
+  width: 50%;
+  /* background-image: url("../../assets/logo-circle.png"); */
+  background-image: url("../../assets/circle-logo.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-size: contain; */
+}
+
+.menu-info {
+  width: 75%;
+  height: 60%;
+  border-radius: 10px;
+  background-color: var(--light-red);
+  display: flex;
+  justify-content: center;
+  box-shadow: 10px 20px 20px rgba(90, 90, 90, 0.2);
 }

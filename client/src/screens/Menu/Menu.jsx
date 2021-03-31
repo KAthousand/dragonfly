@@ -4,7 +4,12 @@ import "./Menu.css"
 function Menu(props) {
   return (
     <div className='menu-container'>
-      <h1>I am the Menu container.</h1>
+      <div className='menu-photo'><h1>PHOTO</h1></div>
+      <div className='menu-content'>
+        <div className='menu-info'>
+          <h1>Menu</h1>
+        </div>
+      </div>
     </div>
   );
 }
