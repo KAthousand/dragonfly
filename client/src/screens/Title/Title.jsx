@@ -5,7 +5,6 @@ function Title(props) {
   return (
     <div className='title-container'>
       <div className='title-content'>
-        <h1>I am the title.</h1>
       </div>
     </div>
   );

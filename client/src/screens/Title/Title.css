@@ -1,4 +1,16 @@
 .title-container {
   background-color: var(--light-red);
   height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-content {
+  height: 100%;
+  width: 50%;
+  background-image: url("../../assets/Dragonfly.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
