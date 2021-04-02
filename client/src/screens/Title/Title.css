@@ -1,5 +1,5 @@
 .title-container {
-  background-color: var(--light-red);
+  /* background-color: var(--light-red); */
   height: 90vh;
   display: flex;
   justify-content: center;

@@ -1,21 +1,32 @@
-import React, {useState} from 'react';
+import React, { useState} from 'react';
+import CarouselSlide from '../CarouselSlide/CarouselSlide';
 import "./Slider.css"
 
 function Slider(props) {
-  const [x, setX] = useState(0);
-  let sliderArray = [1, 2, 3];
-  const goLeft = () => {
-    x === 0 ? setX(0) : setX(x + 100);
-  };
+
+  const [backgroundColor, setBackgroundColor] = useState(false)
+  const [slideIndex, setSlideIndex] = useState(0);
+  const myArr = ['blue', 'purple', 'green', 'orange']
+  // const myArr = [<CarouselSlide content={'blue'}/>,<CarouselSlide content={'purple'} />,<CarouselSlide content={'green'}/>,<CarouselSlide content={'orange'}/>]
   const goRight = () => {
-    x === -100 * (sliderArray.length - 1) ? setX(x) : setX(x - 100);
+    if (slideIndex < myArr.length-1) {
+      setSlideIndex(slideIndex + 1)
+      setTimeout(setBackgroundColor(myArr[slideIndex], 250))
+    } else {
+      setSlideIndex(0);
+    }
   };
+  const goLeft = () => {
+    if (slideIndex > 0) {
+      setSlideIndex(slideIndex - 1)
+      setTimeout(setBackgroundColor(myArr[slideIndex], 250))
+    } else {
+      setSlideIndex(myArr.length - 1);
+    };
+  }
 
   return (
     <div className='slider'>
-      <section className='section-a slide' style={{ transform: `translateX(${x}%)` }}></section>
-      <section className='section-b slide' style={{ transform: `translateX(${x}%)` }}></section>
-      <section className='section-c slide' style={{transform: `translateX(${x}%)`}}></section>
       <div className='slide-nav'>
         <button id='goLeft' onClick={goLeft}>
           left
@@ -24,6 +35,15 @@ function Slider(props) {
             right
         </button>
       </div>
+      <div className='slider-content' style={{backgroundColor: backgroundColor}}>
+        {myArr.map((elem, idx) => {
+          if (idx === 0) {
+            return <CarouselSlide content={elem} slideIndex={slideIndex} idx={idx} myArr={myArr}/>
+          } else {
+            return <CarouselSlide content={elem} slideIndex={slideIndex} idx={idx} myArr={myArr}/>
+          }
+        })}
+        </div>
     </div>
   );
 }

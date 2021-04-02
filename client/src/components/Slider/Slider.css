@@ -1,5 +1,5 @@
 .slider {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   height: 100%;
   width: 100%;
   overflow-x: hidden;
@@ -10,7 +10,7 @@
 }
 
 .slide-nav {
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   position: absolute;
   /* top: 0; */
   /* z-index: 10; */
@@ -18,23 +18,19 @@
   width: 90%;
   display: flex;
   justify-content: space-between;
+  z-index: 800;
 }
 
 .slide {
-  border: 1px solid blue;
-  min-width: 100%;
-  height: 100%;
+  /* background-color: green; */
+  min-width: 100vw;
+  height: 90vh;
   transition: 0.5s;
 }
 
-.section-a {
-  background-color: aquamarine;
-}
-
-.section-b {
-  background-color: gold;
-}
-
-.section-c {
-  background-color: blue;
+.slider-content {
+  position: relative;
+  display: flex;
+  height: 100%;
+  overflow-x: hidden;
 }
