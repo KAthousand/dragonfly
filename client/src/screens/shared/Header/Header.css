@@ -16,6 +16,13 @@
   align-items: center;
 }
 
+.nav-link-container2 {
+  background-color: red;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .nav-link-container {
   background-color: transparent;
   height: 5vh;
