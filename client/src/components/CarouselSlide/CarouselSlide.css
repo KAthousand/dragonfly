@@ -7,8 +7,8 @@
   transition: 1s;
 }
 
-.slide-exit {
-}
+/* .slide-exit {
+} */
 
 .slide-transition-right {
   /* position: absolute; */
@@ -22,5 +22,5 @@
   height: 100%;
   width: 100vw;
   transform: translateX(-100%);
-  /* transition: 1s; */
+  transition: 1s;
 }
