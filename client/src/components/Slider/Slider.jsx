@@ -4,12 +4,11 @@ import "./Slider.css"
 
 function Slider(props) {
 
-  const [backgroundColor, setBackgroundColor] = useState(false)
+  const [backgroundColor, setBackgroundColor] = useState(false);
   const [slideIndex, setSlideIndex] = useState(0);
-  const [timer, setTimer] = useState(0)
-  const [play, setPlay] = useState(true)
-  const myArr = ['blue', 'purple', 'green', 'orange']
-  // const myArr = [<CarouselSlide content={'blue'}/>,<CarouselSlide content={'purple'} />,<CarouselSlide content={'green'}/>,<CarouselSlide content={'orange'}/>]
+  const [play, setPlay] = useState(true);
+  const myArr = ['blue', 'purple', 'green', 'orange'];
+
   const goLeft = () => {
     if (slideIndex < myArr.length-1) {
       setSlideIndex(slideIndex + 1)
@@ -19,6 +18,7 @@ function Slider(props) {
       setTimeout(setBackgroundColor(myArr[slideIndex], 250))
     }
   };
+  
   const goRight = () => {
     if (slideIndex > 0) {
       setSlideIndex(slideIndex - 1)
