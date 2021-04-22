@@ -7,12 +7,14 @@ import './App.css';
 import Information from "./screens/Information/Information";
 
 function App() {
-  const [visible, setVisible] = useState({title:false})
+  const [visible, setVisible] = useState({title:false, menu:false})
   const refTitle = useRef(null)
+  const refMenu = useRef(null)
 
   useLayoutEffect(() => {
     const bottomPosition = (element) => element.getBoundingClientRect().bottom;
     const titlePosition = bottomPosition(refTitle.current);
+    const menuPosition = bottomPosition(refMenu.current);
     const onScroll = () => {
       const scrollPosition = window.scrollY;
       // console.log(`scroll pos ${scrollPosition} and title pos ${titlePosition}`)
@@ -20,6 +22,10 @@ function App() {
         setVisible((prevState) => ({ ...prevState, title: true }));
       } else if (titlePosition > scrollPosition) {
         setVisible((prevState) => ({ ...prevState, title: false}));
+      } else if (scrollPosition > menuPosition) {
+        setVisible((prevState) => ({ ...prevState, menu: true }));
+      } else if (menuPosition > scrollPosition) {
+        setVisible((prevState)=>({...prevState, menu: false}))
       }
     };
     window.addEventListener('scroll', onScroll);
@@ -30,8 +36,10 @@ function App() {
       <div ref={refTitle}>
         <Title />
       </div>
-        <About />
-        <Menu />
+      <About visibleTitle={visible.title} />
+      <div ref={refMenu}>
+        <Menu visibleMenu={visible.menu}/>
+      </div>
         <Information />
       </Layout>
   );
