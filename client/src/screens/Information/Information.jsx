@@ -5,7 +5,18 @@ function Information(props) {
   return (
     <div className='info-container'>
       <div className='info-content'>
-        <h1>I am the information.</h1>
+        <div className='info'>
+        <div className='info-title'></div>
+          <p>1234 Address St,</p>
+          <p>Detroit, MI 48221</p>
+          <br />
+          <div className='info-hours'>
+            <p>Monday to Thursday</p>
+            <h3>5pm - 12am</h3>
+            <p>Friday to Sunday</p>
+            <h3>4pm - 2am</h3>
+          </div>
+        </div>
       </div>
     </div>
   );

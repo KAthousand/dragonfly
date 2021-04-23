@@ -14,20 +14,15 @@ function App() {
   useLayoutEffect(() => {
     const bottomPosition = (element) => element.getBoundingClientRect().bottom;
     const titlePosition = bottomPosition(refTitle.current);
-    const menuPosition = bottomPosition(refMenu.current);
     const onScroll = () => {
       const scrollPosition = window.scrollY;
       // console.log(`scroll pos ${scrollPosition} and title pos ${titlePosition}`)
       if (scrollPosition > titlePosition) {
         setVisible((prevState) => ({ ...prevState, title: true }));
       } else if (titlePosition > scrollPosition) {
-        setVisible((prevState) => ({ ...prevState, title: false}));
-      } else if (scrollPosition > menuPosition) {
-        setVisible((prevState) => ({ ...prevState, menu: true }));
-      } else if (menuPosition > scrollPosition) {
-        setVisible((prevState)=>({...prevState, menu: false}))
+        setVisible((prevState) => ({ ...prevState, title: false }));
       }
-    };
+    }
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll)
   }, []);
@@ -37,11 +32,9 @@ function App() {
         <Title />
       </div>
       <About visibleTitle={visible.title} />
-      <div ref={refMenu}>
-        <Menu visibleMenu={visible.menu}/>
-      </div>
-        <Information />
-      </Layout>
+      <Menu/>
+      <Information />
+    </Layout>
   );
 }
 
