@@ -16,7 +16,7 @@ function CarouselSlide(props) {
 
 
   return (
-    <div className={active} style={{ backgroundColor: content }}></div>
+    <div className={active} style={{ backgroundImage: `url(${content})` }}></div>
   );
 }
 

@@ -1,15 +1,32 @@
 .menu-container {
-  height: 240vh;
+  height: 220vh;
   background-color: var(--beige);
   background-image: url("../../assets/circle-logo.png");
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
 }
 
 .menu-photo {
   border: 2px solid blue;
-  height: 80vh;
+  height: 70vh;
   width: 100%;
+  background-image: url("../../assets/deluxx_photos/cocktail2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* z-index: 100; */
+}
+
+.menu-photo2 {
+  border: 2px solid blue;
+  height: 70vh;
+  width: 100%;
+  background-image: url("../../assets/deluxx_photos/cocktails3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* position: fixed; */
 }
 
 .menu-content {

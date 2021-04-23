@@ -9,7 +9,6 @@ import Information from "./screens/Information/Information";
 function App() {
   const [visible, setVisible] = useState({title:false, menu:false})
   const refTitle = useRef(null)
-  const refMenu = useRef(null)
 
   useLayoutEffect(() => {
     const bottomPosition = (element) => element.getBoundingClientRect().bottom;

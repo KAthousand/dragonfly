@@ -9,6 +9,7 @@ function Information(props) {
         <div className='info-title'></div>
           <p>1234 Address St,</p>
           <p>Detroit, MI 48221</p>
+          <p>(555) 555-5555</p>
           <br />
           <div className='info-hours'>
             <p>Monday to Thursday</p>

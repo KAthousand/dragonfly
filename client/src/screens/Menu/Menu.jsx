@@ -10,7 +10,7 @@ function Menu(props) {
     const menuPosition = topPosition(refMenu.current);
     const onScroll = () => {
       const scrollPosition = (window.scrollY + window.innerHeight);
-      console.log(`scroll pos ${scrollPosition} and title pos ${menuPosition}`)
+      // console.log(`scroll pos ${scrollPosition} and title pos ${menuPosition}`)
       if (scrollPosition > menuPosition) {
         setVisible((prevState) => ({ ...prevState, menu: true }));
       } else if (menuPosition > scrollPosition) {
@@ -23,13 +23,13 @@ function Menu(props) {
 
   return (
     <div className='menu-container' ref={refMenu}>
-      <div className='menu-photo'><h1>PHOTO</h1></div>
+      <div className='menu-photo'></div>
       <div className='menu-content'>
         <div className={visible.menu ? 'menu-info' : 'menu-info-transition menu-info'}>
           <h1>Menu</h1>
         </div>
       </div>
-      <div className='menu-photo'><h1>PHOTO</h1></div>
+      <div className='menu-photo2'></div>
     </div>
   );
 }
