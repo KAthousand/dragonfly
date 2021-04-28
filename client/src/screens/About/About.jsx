@@ -6,7 +6,6 @@ function About(props) {
 
   return (
     <div className='about-container'>
-
       <div className='about-content'>
         <div className='about-text'>
           <div className={visibleTitle ? 'about-header' : 'about-header about-header-transition'}>
