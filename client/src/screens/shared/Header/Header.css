@@ -26,7 +26,7 @@
 }
 
 .nav-link-container2 {
-  background-color: var(--red);
+  background-color: var(--dark-red);
   height: 5vh;
   display: flex;
   justify-content: flex-end;
@@ -52,7 +52,7 @@
 }
 
 .nav-link {
-  color: var(--background);
+  color: var(--light-red);
   font-weight: 800;
   letter-spacing: 2px;
 }

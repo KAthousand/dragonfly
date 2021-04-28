@@ -1,9 +1,11 @@
 .title-container {
   /* background-color: var(--light-red); */
-  height: 100vh;
+  /* height: 100vh; */
+  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .title-content {
