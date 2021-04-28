@@ -10,6 +10,7 @@ function Slider(props) {
 
   const [backgroundColor, setBackgroundColor] = useState(false);
   const [slideIndex, setSlideIndex] = useState(0);
+  const [timer, setTimer] = useState(3000)
   const [play, setPlay] = useState(true);
   const myArr = [slide1, slide2, slide3, slide4];
 
@@ -25,22 +26,22 @@ function Slider(props) {
   
   const goRight = () => {
     if (slideIndex > 0) {
-      
-      setTimeout(() =>setSlideIndex(slideIndex - 1), 1000);
+      setTimeout(() =>setSlideIndex(slideIndex - 1), 250);
       setBackgroundColor(myArr[slideIndex])
     } else {
-      setTimeout(() =>setSlideIndex(myArr.length - 1), 1000);
+      setTimeout(() =>setSlideIndex(myArr.length - 1), 250);
       setBackgroundColor(myArr[slideIndex])
     };
   }
 
   useEffect(() => {
     if (play) {
-      setTimeout(goRight, 3000)
+      setTimeout(goRight, timer)
     } else {
-      clearTimeout()
+      clearTimeout(goRight)
+      setTimer(0);
     }
-  }, [play, goRight])
+  }, [play, goRight, timer])
 
   return (
     <div className='slider'>

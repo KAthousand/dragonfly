@@ -13,7 +13,7 @@
   width: 75%;
   background-color: blue;
   /* background-color: var(--background); */
-  box-shadow: 10px 20px 20px rgba(90, 90, 90, 0.2);
+  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: center;
   /* flex-direction: column; */

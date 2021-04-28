@@ -10,7 +10,8 @@
 .address-container {
   /* border: 2px solid blue; */
   padding: 0.5vh 0;
-  background-color: var(--grey);
+  color: var(--light-red);
+  background-color: var(--dark-red);
   display: flex;
   justify-content: center;
   align-items: center;
