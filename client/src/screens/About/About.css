@@ -5,7 +5,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
+  /* overflow-x: hidden; */
   z-index: -2;
 }
 .about-container::before {
@@ -31,6 +32,7 @@
   /* align-items: center; */
   box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.4);
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 .about-text {
   background: linear-gradient(to left, var(--dark-red) 18%, rgba(0, 0, 0, 0.2)),
@@ -54,7 +56,6 @@
   background-color: var(--dark-red);
   transform: rotate(7deg);
   box-shadow: 70px 20px 50px rgba(0, 0, 0, 0.4);
-  /* border: 2px solid yellow; */
   z-index: -1;
 }
 
@@ -135,4 +136,32 @@
   height: 100%;
   /* position: absolute; */
   /* top: 0%; */
+}
+
+@media (max-width: 1100px) {
+  .about-text {
+    width: 40%;
+    background: var(--dark-red);
+  }
+
+  .about-text::after {
+    right: -15%;
+  }
+
+  .about-paragraph {
+    /* border: 2px solid green; */
+    width: 95%;
+    top: 26%;
+  }
+}
+@media (max-width: 800px) {
+  .about-paragraph {
+    border: 2px solid green;
+    width: 100%;
+    top: 18%;
+  }
+
+  .about-header-accents {
+    width: 15%;
+  }
 }

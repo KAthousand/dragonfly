@@ -103,3 +103,20 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+@media (max-width: 1200px) {
+  .info-content {
+    width: 90%;
+  }
+  .info {
+    width: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .info {
+    top: 75%;
+    width: 70%;
+    height: 30%;
+  }
+}

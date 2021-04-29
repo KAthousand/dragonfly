@@ -108,7 +108,7 @@
   width: 35vh;
   position: absolute;
   bottom: 3vh;
-  right: 30vh;
+  right: 18%;
   z-index: 4;
   opacity: 100%;
   transition: opacity 0.5s, transform 2.5s;
@@ -137,4 +137,31 @@
   line-height: 1.5;
   width: 90%;
   /* border: 2px solid green; */
+}
+
+@media (max-width: 1200px) {
+  .menu-content-photo2 {
+    height: 25vh;
+    width: 25vh;
+    right: 5%;
+  }
+  .menu-content-photo3 {
+    height: 20vh;
+    width: 20vh;
+    right: 2%;
+  }
+}
+
+@media (max-width: 800px) {
+  .menu-content-text {
+    margin-right: 0%;
+  }
+  .menu-text-paragraph {
+    width: 100%;
+    line-height: 1.25;
+  }
+  .menu-content-photo {
+    height: 70vw;
+    width: 34%;
+  }
 }

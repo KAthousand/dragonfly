@@ -165,8 +165,10 @@
   background-color: var(--light-red);
   height: 40vh;
   width: 100%;
-  transition: 1s;
+  z-index: 999;
   transform: translateY(-200%);
+  box-shadow: none;
+  transition: 1s;
 }
 
 .mobile-nav {
@@ -175,11 +177,12 @@
   height: 40vh;
   width: 100%;
   z-index: 999;
-  transition: 1s;
   padding: 10% 0;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  box-shadow: 0 38px 35px rgba(0, 0, 0, 0.4);
+  transition: 1s;
 }
 
 .mobile-nav-menu {

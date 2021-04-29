@@ -55,3 +55,10 @@
   color: var(--light-red);
   font-size: 1.5em;
 }
+
+@media (max-width: 800px) {
+  .icon-container {
+    left: 35%;
+    width: 25%;
+  }
+}
