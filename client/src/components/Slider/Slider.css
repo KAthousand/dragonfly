@@ -70,7 +70,11 @@
   .play-btn {
     font-size: 3em;
   }
+  .slide-nav {
+    border: 2px solid yellow;
+  }
   .slide-btn {
-    width: 5%;
+    width: 2.5%;
+    border: 2px solid green;
   }
 }
