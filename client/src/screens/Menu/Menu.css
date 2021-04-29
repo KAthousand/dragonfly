@@ -146,6 +146,10 @@
 }
 
 @media (max-width: 800px) {
+  .menu-photo,
+  .menu-photo2 {
+    background-attachment: scroll;
+  }
   .menu-content-text {
     margin-right: 0%;
   }
