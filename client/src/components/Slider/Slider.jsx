@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect} from 'react';
 import CarouselSlide from '../CarouselSlide/CarouselSlide';
 import slide1 from '../../assets/deluxx_photos/slide1.jpg'
 import slide2 from '../../assets/deluxx_photos/slide2.jpg'
@@ -32,7 +32,6 @@ function Slider(props) {
       setBackgroundColor(myArr[slideIndex]);
     };
   }
-
   useEffect(() => {
     let intervalId;
     if (play) {
@@ -41,6 +40,7 @@ function Slider(props) {
     return () => {
       clearInterval(intervalId);
     }
+  // eslint-disable-next-line
   }, [slideIndex, play])
 
   return (
