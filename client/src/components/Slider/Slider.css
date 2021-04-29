@@ -6,25 +6,52 @@
 
 .slide-nav {
   position: absolute;
-  margin: 45vh 10vh;
-  width: 90%;
+  margin: 40vh 2.5%;
+  width: 95%;
+  height: 30%;
   display: flex;
   justify-content: space-between;
   z-index: 800;
+}
+
+.slide-btn {
+  height: 10vh;
+  width: 6vh;
+  align-self: flex-start;
+  color: var(--light-red);
+  background-color: transparent;
+  font-size: 4em;
+}
+
+.play-btn {
+  height: 10vh;
+  width: 10vh;
+  align-self: flex-end;
+  color: var(--light-red);
+  background-color: transparent;
+  font-size: 4em;
 }
 
 .slider-content {
   position: relative;
   display: flex;
   height: 100%;
-  /* width: 100vw; */
   min-width: 100%;
-  /* border: 2px solid yellow; */
   overflow-x: hidden;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* transition: 0.5s; */
-  /* -webkit-backface-visibility: hidden; */
-  /* background-color: blue; */
+}
+
+.icon-container {
+  top: 77vh;
+  left: 42.5%;
+  height: 10%;
+  width: 15%;
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--light-red);
+  font-size: 1.5em;
 }

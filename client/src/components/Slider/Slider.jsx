@@ -10,7 +10,6 @@ function Slider(props) {
 
   const [backgroundColor, setBackgroundColor] = useState(false);
   const [slideIndex, setSlideIndex] = useState(0);
-  const [time, setTime] = useState(3000)
   const [play, setPlay] = useState(true);
   const myArr = [slide1, slide2, slide3, slide4];
 
@@ -25,7 +24,6 @@ function Slider(props) {
   };
   
   const goRight = () => {
-    // clearTimeout(timer);
     if (slideIndex > 0) {
       setTimeout(() =>setSlideIndex(slideIndex - 1), 250);
       setBackgroundColor(myArr[slideIndex]);
@@ -33,46 +31,25 @@ function Slider(props) {
       setTimeout(() =>setSlideIndex(myArr.length - 1), 250);
       setBackgroundColor(myArr[slideIndex]);
     };
-    // timer = setTimeout(goRight(), time);
   }
 
-  // if (play) {
-  //   setTime(3000);
-  //   timer = setTimeout(goRight())
-  // } else {
-  //   setTime(0)
-  // }
-  // let timer;
   useEffect(() => {
     let intervalId;
     if (play) {
       intervalId = setInterval(goRight, 3000);
     }
-    
     return () => {
       clearInterval(intervalId);
     }
-    // if (play) {
-    //   goRight();
-    // } else{
-    //   setTime(0);
-    // }
   }, [slideIndex, play])
 
   return (
     <div className='slider'>
       <div className='slide-nav'>
-        <button id='goLeft' onClick={goLeft}>
-          left
-        </button>
-        <button onClick={()=>setPlay(!play)}>
-          {play ? "pause": "play"}
-        </button>
-        <button id='goLeft' onClick={goRight}>
-          right
-        </button>
+        <button className='slide-btn fas fa-angle-left' id='goLeft' onClick={goLeft}></button>
+        <button className={ play ? 'play-btn fas fa-pause' : 'play-btn fas fa-play'} onClick={()=>setPlay(!play)}></button>
+        <button className='slide-btn fas fa-angle-right' id='goLeft' onClick={goRight}></button>
       </div>
-      {/* <div className='slider-content'> */}
       <div className='slider-content' style={{backgroundImage: `url(${backgroundColor})`}}>
         {myArr.map((elem, idx) => {
           if (idx === 0) {
@@ -81,6 +58,11 @@ function Slider(props) {
             return <CarouselSlide content={elem} slideIndex={slideIndex} idx={idx} myArr={myArr} key={idx+1}/>
           }
         })}
+      </div>
+      <div className= 'icon-container'>
+          <i className='fab fa-facebook-square'></i>
+          <i className='fab fa-instagram-square'></i>
+          <i className='fab fa-tripadvisor'></i>
         </div>
     </div>
   );
