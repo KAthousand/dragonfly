@@ -12,16 +12,15 @@
   display: flex;
   justify-content: space-between;
   z-index: 999;
-  border: 2px solid yellow;
 }
 
 .slide-btn {
   height: 10vh;
-  width: 6vh;
   align-self: flex-start;
   color: var(--light-red);
   background-color: transparent;
   font-size: 4em;
+  border: 2px solid green;
 }
 
 .play-btn {
