@@ -24,7 +24,7 @@
 
 .play-btn {
   height: 10vh;
-  width: 10vh;
+  /* width: 10vh; */
   align-self: flex-end;
   color: var(--light-red);
   background-color: transparent;
@@ -73,8 +73,9 @@
   .slide-nav {
     border: 2px solid yellow;
   }
-  .slide-btn {
-    width: 2.5%;
+  .fas {
     border: 2px solid green;
+    margin: 0;
+    padding: 0;
   }
 }
