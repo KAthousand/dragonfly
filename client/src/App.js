@@ -15,7 +15,6 @@ function App() {
     const titlePosition = bottomPosition(refTitle.current);
     const onScroll = () => {
       const scrollPosition = window.scrollY;
-      // console.log(`scroll pos ${scrollPosition} and title pos ${titlePosition}`)
       if (scrollPosition > titlePosition) {
         setVisible((prevState) => ({ ...prevState, title: true }));
       } else if (titlePosition > scrollPosition) {

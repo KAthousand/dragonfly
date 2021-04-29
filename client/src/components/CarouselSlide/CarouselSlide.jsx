@@ -1,10 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 import "./CarouselSlide.css"
 
 
 function CarouselSlide(props) {
   const { content, idx, slideIndex, myArr} = props;
-  // const [active, setActive] = useState(false);
   let active;
   if (slideIndex === idx) {
     active = 'slide'
