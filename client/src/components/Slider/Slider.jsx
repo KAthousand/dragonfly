@@ -48,7 +48,7 @@ function Slider(props) {
       <div className='slide-nav'>
         <button className='slide-btn fas fa-angle-left' id='goLeft' onClick={goLeft}></button>
         <button className={ play ? 'play-btn fas fa-pause' : 'play-btn fas fa-play'} onClick={()=>setPlay(!play)}></button>
-        <button className='slide-btn fas fa-angle-right' id='goLeft' onClick={goRight}></button>
+        <button className='slide-btn fas fa-angle-right' id='goLeft' onClick={()=>goRight()}></button>
       </div>
       <div className='slider-content' style={{backgroundImage: `url(${backgroundColor})`}}>
         {myArr.map((elem, idx) => {

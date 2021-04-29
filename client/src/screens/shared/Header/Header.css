@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   right: 0;
+  height: 0;
   width: 100%;
   z-index: 1000;
 }
@@ -80,14 +81,12 @@
 
 .nav-icon,
 .nav-icon2 {
-  /* border: 2px solid yellow; */
   background-color: var(--light-red);
   display: none;
   justify-content: flex-end;
   align-items: center;
   height: 7.5vh;
   width: 100%;
-  /* padding-top: 45px; */
   padding-right: 5%;
   z-index: 1000;
 }
@@ -230,7 +229,10 @@
   }
 
   .nav-icon,
-  .nav-icon2 {
+  .nav-icon2,
+  .mobile-nav,
+  .mobile-nav-closed,
+  .mobile-nav-menu {
     display: flex;
   }
 }

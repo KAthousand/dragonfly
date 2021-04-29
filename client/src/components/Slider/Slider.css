@@ -11,7 +11,7 @@
   height: 30%;
   display: flex;
   justify-content: space-between;
-  z-index: 800;
+  z-index: 999;
 }
 
 .slide-btn {
