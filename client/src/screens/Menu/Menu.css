@@ -53,6 +53,7 @@
   position: relative;
   justify-content: center;
   align-items: center;
+  left: 4%;
   bottom: 8%;
   opacity: 100%;
   transition: 1s;
@@ -78,15 +79,19 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 10%;
+  margin-right: 8%;
 }
 
 .menu-content-photo {
   background-color: blue;
+  /* background-image: url("../../assets/deluxx_photos/Gimlet_Photo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; */
   height: 90%;
   width: 30%;
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: 0%;
+  left: 0%;
 }
 
 .menu-content-photo2 {
@@ -94,8 +99,8 @@
   height: 35vh;
   width: 35vh;
   position: absolute;
-  bottom: 5vh;
-  right: 35vh;
+  bottom: 3vh;
+  right: 30vh;
 }
 
 .menu-content-photo3 {
@@ -104,7 +109,7 @@
   width: 25vh;
   position: absolute;
   bottom: 35vh;
-  right: 15vh;
+  right: 12vh;
 }
 
 .menu-info-transition {

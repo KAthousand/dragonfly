@@ -4,8 +4,6 @@
   justify-content: center;
   align-items: center;
   background-color: var(--dark-red);
-  border: 2px solid blue;
-  /* opacity: 0.25; */
 }
 .info-container::before {
   content: "";
@@ -24,7 +22,7 @@
 }
 
 .info-content {
-  height: 50%;
+  height: 80%;
   width: 75%;
   background-color: blue;
   /* background-color: var(--background); */
@@ -42,14 +40,13 @@
   height: 40%;
   width: 40%;
   position: relative;
-  top: 50%;
+  top: 55%;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   padding: 1% 0;
-  /* background-color: var(--background); */
-  border: 2px solid red;
+  background-color: var(--dark-red);
+  border-radius: 15px;
 }
 
 .info-title {
@@ -61,4 +58,13 @@
   height: 20%;
   margin-bottom: 5%;
   border: 2px solid green;
+}
+
+.info-location,
+.info-hours {
+  color: var(--light-red);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
