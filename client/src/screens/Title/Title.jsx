@@ -4,7 +4,7 @@ import "./Title.css"
 
 function Title(props) {
   return (
-    <div className='title-container'>
+    <div className='title-container' id='title'>
       <Slider />
       <div className='title-content'>
       </div>

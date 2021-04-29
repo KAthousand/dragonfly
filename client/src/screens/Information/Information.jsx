@@ -3,8 +3,8 @@ import "./Information.css"
 
 function Information(props) {
   return (
-    <div className='info-container'>
-      <div className='info-content'>
+    <div className='info-container' id='info'>
+      <div className='info-content' >
         <div className='info'>
           <div className='info-title'></div>
           <div className='info-text'>

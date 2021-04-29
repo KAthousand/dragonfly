@@ -165,3 +165,35 @@
     width: 34%;
   }
 }
+
+@media (max-width: 600px) {
+  .menu-info {
+    width: 90%;
+    height: 45%;
+    left: 0;
+    top: -25%;
+  }
+  .menu-content-text {
+    width: 100%;
+    height: 100%;
+    padding: 5% 0;
+  }
+
+  .menu-text-paragraph {
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    line-height: 1.1;
+  }
+  .menu-content-photo {
+    height: 55%;
+    width: 45%;
+  }
+  .menu-content-photo2 {
+    bottom: 1vh;
+  }
+  .menu-content-photo3 {
+    right: 0;
+    bottom: 20vh;
+  }
+}

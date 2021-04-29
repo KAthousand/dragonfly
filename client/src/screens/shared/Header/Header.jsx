@@ -12,9 +12,9 @@ function Header(props) {
       </div>
       <div className={visibleTitle ? 'nav-link-container2':'nav-link-container'}>
         <div className='nav-menu'>
-          <a href='_blank' className='nav-link'>OUR STORY</a>
-          <a href='_blank' className='nav-link'>MENU</a>
-          <a href='_blank' className='nav-link'>HOURS  &amp;  LOCATION</a>
+          <a href='#about' className='nav-link'>OUR STORY</a>
+          <a href='#menu' className='nav-link'>MENU</a>
+          <a href='#info' className='nav-link'>HOURS  &amp;  LOCATION</a>
         </div>
       </div>
       <div className={navOpen ? 'nav-icon2' : 'nav-icon'}>
@@ -22,9 +22,9 @@ function Header(props) {
       </div>
       <div className={navOpen ? 'mobile-nav' : 'mobile-nav-closed'}>
         <div className='mobile-nav-menu'>
-          <a href='_blank' className={navOpen ? 'nav-link-open nav-link' : 'nav-link'}>OUR STORY</a>
-          <a href='_blank' className={navOpen ? 'nav-link-open nav-link' : 'nav-link'}>MENU</a>
-          <a href='_blank' className={navOpen ? 'nav-link-open nav-link' : 'nav-link'}>HOURS  &amp;  LOCATION</a>
+          <a href='#about' className={navOpen ? 'nav-link-open nav-link' : 'nav-link'} onClick={()=>setNavOpen(!navOpen)}>OUR STORY</a>
+          <a href='#menu' className={navOpen ? 'nav-link-open nav-link' : 'nav-link'} onClick={()=>setNavOpen(!navOpen)}>MENU</a>
+          <a href='#info' className={navOpen ? 'nav-link-open nav-link' : 'nav-link'} onClick={()=>setNavOpen(!navOpen)}>HOURS  &amp;  LOCATION</a>
         </div>
       </div>
     </div>

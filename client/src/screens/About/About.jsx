@@ -5,8 +5,8 @@ function About(props) {
   const { visibleTitle } = props;
 
   return (
-    <div className='about-container'>
-      <div className='about-content'>
+    <div className='about-container' id='about'>
+      <div className='about-content' >
         <div className='about-text'>
           <div className={visibleTitle ? 'about-header' : 'about-header about-header-transition'}>
             <div className={visibleTitle ? 'about-header-left about-header-accents':'about-header-left'}></div>

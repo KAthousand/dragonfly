@@ -23,8 +23,8 @@ function Menu(props) {
 
   return (
     <div className='menu-container' >
-      <div className='menu-photo'></div>
-      <div className='menu-divider'></div>
+      <div className='menu-photo' id='menu'></div>
+      <div className='menu-divider' ></div>
       <div className='menu-content' ref={refMenu}>
         <div className={visible.menu ? 'menu-info' : 'menu-info-transition menu-info'}>
           <div className='menu-content-text'>

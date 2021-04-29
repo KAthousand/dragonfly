@@ -120,3 +120,16 @@
     height: 30%;
   }
 }
+
+@media (max-width: 600px) {
+  .info-content {
+    width: 95%;
+  }
+  .info {
+    width: 95%;
+    top: 65%;
+  }
+  .info-icon-container {
+    margin-bottom: 10px;
+  }
+}

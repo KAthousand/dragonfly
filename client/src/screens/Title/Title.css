@@ -16,3 +16,9 @@
   background-position: center;
   position: absolute;
 }
+
+@media (max-width: 600px) {
+  .title-content {
+    top: -20vh;
+  }
+}
