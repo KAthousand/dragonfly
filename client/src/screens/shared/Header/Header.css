@@ -27,7 +27,7 @@
 
 .nav-link-container2 {
   background-color: var(--dark-red);
-  height: 5vh;
+  height: 8vh;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -37,7 +37,7 @@
 
 .nav-link-container {
   background-color: transparent;
-  height: 5vh;
+  height: 8vh;
   /* border: 2px solid green; */
   display: flex;
   justify-content: flex-end;
@@ -55,4 +55,24 @@
   color: var(--light-red);
   font-weight: 800;
   letter-spacing: 2px;
+  /* border: 2px solid red; */
+  position: relative;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0px;
+  bottom: -5px;
+  transition: 0.5s ease-in-out;
+}
+
+.nav-link:hover::before {
+  content: "";
+  position: absolute;
+  background-color: var(--light-red);
+  height: 2px;
+  width: 100%;
+  bottom: -5px;
 }
