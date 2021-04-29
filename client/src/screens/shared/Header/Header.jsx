@@ -6,7 +6,7 @@ function Header(props) {
   return (
     <div className='header-container'>
       <div className={visibleTitle ? 'address-container-transition address-container':'address-container'}>
-        <p className={visibleTitle ? 'hidden' : 'address'}>1234 Address St, Detroit, MI</p>
+        <p className={visibleTitle ? 'hidden' : 'address'}>1234 ADDRESS ST, DETROIT, MI</p>
         
       </div>
       <div className={visibleTitle ? 'nav-link-container2':'nav-link-container'}>

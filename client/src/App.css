@@ -22,13 +22,24 @@ button {
 }
 
 :root {
-  --background: #eae7dc;
-  --beige: #d8c3a5;
-  --grey: #8e8d8a;
   --light-red: #f1d2d5;
   --red: #b65e59;
   --dark-red: #8c3f37;
-  --blue: #4f6279;
+  --font-display: "Josefin Sans", sans-serif;
+  --font-regular: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+}
+
+p {
+  font-family: var(--font-regular);
 }
 
 body {

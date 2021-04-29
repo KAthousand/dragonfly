@@ -109,13 +109,16 @@
   width: 90%;
   z-index: 2;
   transition: 1s;
-  /* padding: 30% 0 0 8%; */
+  margin-left: 8%;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
   display: flex;
   align-items: flex-start;
   opacity: 100;
   transform: translateY(0);
   position: relative;
-  top: 20%;
+  top: 22%;
 }
 
 .about-paragraph-transition {

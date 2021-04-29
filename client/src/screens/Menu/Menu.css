@@ -71,7 +71,7 @@
 
 .menu-content-text {
   color: var(--light-red);
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height: 70%;
   width: 50%;
   display: flex;
@@ -115,4 +115,12 @@
 .menu-info-transition {
   opacity: 0;
   transform: translateY(100%);
+}
+
+.menu-text-paragraph {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  width: 90%;
+  /* border: 2px solid green; */
 }
