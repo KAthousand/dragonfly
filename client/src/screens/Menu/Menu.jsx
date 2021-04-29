@@ -10,7 +10,6 @@ function Menu(props) {
     const menuPosition = topPosition(refMenu.current);
     const onScroll = () => {
       const scrollPosition = (window.scrollY + window.innerHeight);
-      // console.log(`scroll pos ${scrollPosition} and title pos ${menuPosition}`)
       if (scrollPosition > menuPosition) {
         setVisible((prevState) => ({ ...prevState, menu: true }));
       } else if (menuPosition > scrollPosition) {

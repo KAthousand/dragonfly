@@ -15,7 +15,6 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  /* z-index: 100; */
 }
 
 .menu-photo2 {
@@ -25,7 +24,6 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  /* position: fixed; */
 }
 
 .menu-divider {
@@ -71,7 +69,6 @@
 
 .menu-content-text {
   color: var(--light-red);
-  /* border: 2px solid red; */
   height: 70%;
   width: 50%;
   display: flex;
@@ -84,9 +81,6 @@
 
 .menu-content-photo {
   background-color: blue;
-  /* background-image: url("../../assets/deluxx_photos/Gimlet_Photo.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; */
   height: 90%;
   width: 30%;
   position: absolute;
@@ -136,7 +130,6 @@
   letter-spacing: 1px;
   line-height: 1.5;
   width: 90%;
-  /* border: 2px solid green; */
 }
 
 @media (max-width: 1200px) {

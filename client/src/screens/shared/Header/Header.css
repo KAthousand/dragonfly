@@ -171,7 +171,6 @@
 }
 
 .mobile-nav {
-  /* border: 2px solid red; */
   background-color: var(--light-red);
   height: 40vh;
   width: 100%;
@@ -189,7 +188,6 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  /* border: 2px solid red; */
   height: 100%;
   width: 50%;
   margin-bottom: 10%;
