@@ -1,14 +1,14 @@
 .menu-container {
   height: 220vh;
-  background-color: var(--beige);
-  background-image: url("../../assets/circle-logo.png");
+  background-color: var(--light-red);
+  background-image: url("../../assets/logo-pattern.png");
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
+  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .menu-photo {
-  border: 2px solid blue;
   height: 70vh;
   width: 100%;
   background-image: url("../../assets/deluxx_photos/cocktail2.jpg");
@@ -19,38 +19,92 @@
 }
 
 .menu-photo2 {
-  border: 2px solid blue;
   height: 70vh;
   width: 100%;
-  background-image: url("../../assets/deluxx_photos/cocktails3.jpg");
+  background-image: url("../../assets/deluxx_photos/SangriaCocktail2.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   /* position: fixed; */
 }
 
+.menu-divider {
+  height: 3vh;
+  width: 100%;
+  background-color: var(--red);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
 .menu-content {
-  border: 2px solid green;
   height: 80vh;
   width: 100%;
-  /* background-image: url("../../assets/logo-circle.png"); */
-  /* background-image: url("../../assets/circle-logo.png"); */
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-size: contain; */
 }
 
 .menu-info {
-  width: 70%;
-  height: 80%;
-  border-radius: 5px;
-  background-color: var(--light-red);
+  width: 60%;
+  height: 75%;
+  background-color: var(--red);
   display: flex;
+  position: relative;
   justify-content: center;
-  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.4);
+  align-items: center;
+  bottom: 8%;
   opacity: 100%;
   transition: 1s;
+}
+
+.menu-info::after {
+  content: "";
+  position: absolute;
+  left: 2%;
+  top: 2.5%;
+  width: 96%;
+  height: 94%;
+  border: 2px solid var(--light-red);
+}
+
+.menu-content-text {
+  color: var(--light-red);
+  border: 2px solid red;
+  height: 70%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10%;
+}
+
+.menu-content-photo {
+  background-color: blue;
+  height: 90%;
+  width: 30%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.menu-content-photo2 {
+  background-color: green;
+  height: 35vh;
+  width: 35vh;
+  position: absolute;
+  bottom: 5vh;
+  right: 35vh;
+}
+
+.menu-content-photo3 {
+  background-color: purple;
+  height: 25vh;
+  width: 25vh;
+  position: absolute;
+  bottom: 35vh;
+  right: 15vh;
 }
 
 .menu-info-transition {

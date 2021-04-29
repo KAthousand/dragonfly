@@ -24,11 +24,24 @@ function Menu(props) {
   return (
     <div className='menu-container' ref={refMenu}>
       <div className='menu-photo'></div>
+      <div className='menu-divider'></div>
       <div className='menu-content'>
         <div className={visible.menu ? 'menu-info' : 'menu-info-transition menu-info'}>
-          <h1>Menu</h1>
+          <div className='menu-content-text'>
+            <div className="menu-text-header"><h1>Offerings</h1></div>
+            <div className='menu-text-paragraph'>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div className='menu-text-link'>
+              Menu PDF
+            </div>
+          </div>
         </div>
+        <div className='menu-content-photo'></div>
+        <div className='menu-content-photo2'></div>
+        <div className='menu-content-photo3'></div>
       </div>
+      <div className='menu-divider'></div>
       <div className='menu-photo2'></div>
     </div>
   );
