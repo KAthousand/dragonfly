@@ -8,16 +8,16 @@
   position: absolute;
   margin: 40vh 2.5%;
   width: 95%;
-  height: 30%;
+  height: 45%;
   display: flex;
   justify-content: space-between;
-  z-index: 999;
+  z-index: 97;
 }
 
 .slide-btn {
   height: 10vh;
   align-self: flex-start;
-  color: var(--light-red);
+  color: var(--beige);
   background-color: transparent;
   font-size: 4em;
 }
@@ -26,7 +26,7 @@
   height: 10vh;
   /* width: 10vh; */
   align-self: flex-end;
-  color: var(--light-red);
+  color: var(--beige);
   background-color: transparent;
   font-size: 4em;
 }

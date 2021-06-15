@@ -1,16 +1,30 @@
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import "./Header.css"
 
 function Header(props) {
-  const { visibleTitle } = props
+  const { visible } = props
   const [navOpen, setNavOpen] = useState(false);
+  const [header, setHeader] = useState('ok')
+
+  useEffect(() => {
+    const headerChange = () => {
+      if (visible.title) {
+        setHeader('header header-title')
+      } else if (visible.about) {
+        setHeader('header header-about')
+      } else if (visible.menu) {
+        setHeader('header header-menu')
+      } else if (visible.info) {
+        setHeader('header header-info')
+      }
+    }
+    headerChange();
+  },[header, visible])
 
   return (
     <div className='header-container'>
-      <div className={visibleTitle ? 'address-container-transition address-container':'address-container'}>
-        <p className={visibleTitle ? 'hidden' : 'address'}>1234 ADDRESS ST, DETROIT, MI</p>      
-      </div>
-      <div className={visibleTitle ? 'nav-link-container2':'nav-link-container'}>
+      <div className={`${header}`}>
+        <a className='header-logo' href='#title'> </a>
         <div className='nav-menu'>
           <a href='#about' className='nav-link'>OUR STORY</a>
           <a href='#menu' className='nav-link'>MENU</a>
@@ -21,11 +35,9 @@ function Header(props) {
         <button onClick={() => setNavOpen(!navOpen)}></button>
       </div>
       <div className={navOpen ? 'mobile-nav' : 'mobile-nav-closed'}>
-        <div className='mobile-nav-menu'>
-          <a href='#about' className={navOpen ? 'nav-link-open nav-link' : 'nav-link'} onClick={()=>setNavOpen(!navOpen)}>OUR STORY</a>
-          <a href='#menu' className={navOpen ? 'nav-link-open nav-link' : 'nav-link'} onClick={()=>setNavOpen(!navOpen)}>MENU</a>
-          <a href='#info' className={navOpen ? 'nav-link-open nav-link' : 'nav-link'} onClick={()=>setNavOpen(!navOpen)}>HOURS  &amp;  LOCATION</a>
-        </div>
+          <a href='#about' className='nav-link-open nav-link' onClick={()=>setNavOpen(!navOpen)}>OUR STORY</a>
+          <a href='#menu' className='nav-link-open nav-link' onClick={()=>setNavOpen(!navOpen)}>MENU</a>
+          <a href='#info' className='nav-link-open nav-link' onClick={()=>setNavOpen(!navOpen)}>HOURS  &amp;  LOCATION</a>
       </div>
     </div>
   );

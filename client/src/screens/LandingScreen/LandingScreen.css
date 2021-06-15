@@ -1,0 +1,21 @@
+.landing-screen-container {
+  background-color: var(--red);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: move-up 1s forwards;
+  animation-delay: 5s;
+  position: absolute;
+  z-index: 100;
+}
+
+@keyframes move-up {
+  from {
+    height: 100vh;
+  }
+  to {
+    height: 0;
+  }
+}

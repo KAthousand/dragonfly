@@ -59,11 +59,11 @@ function Slider(props) {
           }
         })}
       </div>
-      <div className= 'icon-container'>
+      {/* <div className= 'icon-container'>
           <i className='fab fa-facebook-square'></i>
           <i className='fab fa-instagram-square'></i>
           <i className='fab fa-tripadvisor'></i>
-        </div>
+        </div> */}
     </div>
   );
 }

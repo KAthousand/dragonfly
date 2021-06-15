@@ -1,38 +1,28 @@
 .about-container {
-  background-color: var(--dark-red);
-  height: 150vh;
-  width: 100%;
+  border-top: 2.5vh solid var(--blue);
+  border-bottom: 2.5vh solid var(--blue);
+  background-color: var(--dark-green);
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: -2;
+  /* box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.4); */
 }
-.about-container::before {
-  content: "";
-  height: 100%;
-  width: 100%;
-  background-image: url("../../assets/title-flat.png");
-  background-repeat: repeat;
-  background-position: center;
-  background-size: contain;
-  position: fixed;
-  top: 0;
-  left: 0;
-  opacity: 0.6;
-  z-index: -1;
-}
+
 .about-content {
   display: flex;
-  height: 70%;
-  width: 100%;
-  position: absolute;
-  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.4);
+  height: 100%;
   overflow-y: hidden;
   overflow-x: hidden;
 }
+
 .about-text {
-  background: linear-gradient(to left, var(--dark-red) 18%, rgba(0, 0, 0, 0.2)),
-    var(--dark-red);
+  background: linear-gradient(
+      to left,
+      var(--dark-green) 18%,
+      rgba(0, 0, 0, 0.2)
+    ),
+    var(--dark-green);
   display: flex;
   flex-direction: column;
   width: 30%;
@@ -48,14 +38,14 @@
   bottom: 0;
   height: 110%;
   width: 100px;
-  background-color: var(--dark-red);
+  background-color: var(--dark-green);
   transform: rotate(7deg);
-  box-shadow: 70px 20px 50px rgba(0, 0, 0, 0.4);
+  /* box-shadow: 70px 20px 50px rgba(0, 0, 0, 0.4); */
   z-index: -1;
 }
 
 .about-header {
-  color: var(--light-red);
+  color: var(--beige);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,18 +78,18 @@
 }
 
 .about-header-accents {
-  background-color: var(--light-red);
+  background-color: var(--beige);
   width: 35%;
   z-index: 2;
 }
 .about-header-accents-right {
-  background-color: var(--light-red);
+  background-color: var(--beige);
   width: 45%;
   z-index: 2;
 }
 
 .about-paragraph {
-  color: var(--light-red);
+  color: var(--beige);
   height: 70%;
   width: 90%;
   z-index: 2;
@@ -122,7 +112,7 @@
 }
 
 .about-photo {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
     url("../../assets/deluxx_photos/cocktail1.jpg");
   background-position: center;
   background-size: cover;
@@ -131,9 +121,12 @@
 }
 
 @media (max-width: 1100px) {
+  .about-container {
+    height: 50vh;
+  }
+
   .about-text {
     width: 40%;
-    background: var(--dark-red);
   }
 
   .about-text::after {
@@ -145,29 +138,22 @@
     top: 26%;
   }
 }
-@media (max-width: 800px) {
-  .about-paragraph {
-    width: 100%;
-    top: 18%;
-  }
-
-  .about-header-accents {
-    width: 15%;
-  }
-}
 
 @media (max-width: 600px) {
   .about-container {
-    height: 180vh;
+    height: 100vh;
   }
   .about-content {
-    height: 100vh;
     flex-direction: column;
+    height: 100%;
   }
   .about-text {
-    height: 50%;
+    height: 80%;
     width: 100%;
-    padding: 0;
+    display: flex;
+    flex: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
   .about-text::after {
     display: none;
@@ -177,17 +163,21 @@
     width: 100%;
   }
   .about-header {
-    width: 100vw;
-    min-width: 0;
-    position: relative;
-    margin: 0;
+    position: static;
+    margin-bottom: 0;
   }
   .about-header-accents,
   .about-header-accents-right {
     width: 20%;
   }
   .about-paragraph {
-    padding: 0 10%;
+    padding: 2% 8%;
     margin: 0;
+    position: static;
+  }
+}
+@media (max-width: 850px) and (max-height: 400px) {
+  .about-container {
+    height: 200vh;
   }
 }

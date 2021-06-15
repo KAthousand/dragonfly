@@ -3,10 +3,10 @@ import Header from '../Header/Header';
 import "./Layout.css"
 
 function Layout(props) {
-  const { visibleTitle } = props
+  const { visible } = props
   return (
     <div className='layout'>
-      <Header visibleTitle={visibleTitle}/>
+      <Header visible={visible}/>
       <div className='layout-children'>
         {props.children}
       </div>
